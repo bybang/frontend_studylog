@@ -1,0 +1,88 @@
+/* @import url(./box.css); */
+
+* {
+  font-size: 25px;
+}
+
+/* .orange ~ li {
+  color: orange;
+} */
+
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: 1s;
+}
+
+.box:focus {
+  width: 300px;
+  background-color: royalblue;
+}
+
+input {
+}
+
+input:focus {
+  background-color: orange;
+} */
+
+/* .fruits *:not(span) {
+  color: goldenrod;
+} */
+
+/* .box {
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+}
+
+.box::before {
+  content: "I'm before!";
+}
+
+.box::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: royalblue;
+} */
+
+/* [type="password"] {
+  background-color: goldenrod;
+}
+
+[disabled] {
+}
+
+[data-fruit-name] {
+  color: red;
+} */
+
+/* .parent {
+  width: 300px;
+  height: 200px;
+  background-color: slateblue;
+}
+
+.child {
+  width: 100px;
+  height: inherit;
+  background-color: inherit;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+} */
+
+div {
+  font-size: 50px;
+}
+
+div.hello {
+  color: royalblue;
+}
+
+.hello {
+  color: red !important;
+}

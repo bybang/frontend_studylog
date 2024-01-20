@@ -1,0 +1,7 @@
+@import url("./box.css");
+
+div {
+  width: 800px;
+  height: 800px;
+  background: url("../images/logo.png");
+}
