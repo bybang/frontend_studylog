@@ -54,9 +54,9 @@ new Swiper(".promotion .swiper", {
   spaceBetween: 10,
   centeredSlides: true,
   loop: true,
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
   pagination: {
     el: ".promotion .swiper-pagination",
     clickable: true,
@@ -79,3 +79,24 @@ promotionToggleBtn.addEventListener("click", function () {
     promotionEl.classList.remove("hide");
   }
 });
+
+// Range random function (up to two decimal places)
+function random(min, max) {
+  // Convert the string data returned through `.toFixed()`,
+  // into numeric data with decimals using `parseFloat()`
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2));
+}
+
+function floatingObjects(selector, delay, size) {
+  gsap.to(selector, random(1.5, 2.5), {
+    y: size,
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.inOut",
+    delay: random(0, delay),
+  });
+}
+
+floatingObjects(".floating1", 1, 15);
+floatingObjects(".floating2", 0.5, 15);
+floatingObjects(".floating3", 1.5, 20);
